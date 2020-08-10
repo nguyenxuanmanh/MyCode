@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+    <head>
+        <title>add wishlist</title>
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+    <body>
+        <h1>Add wishlist</h1>
+        <h:form>
+              ID:
+             <h:inputText value="#{adminMB.WLID}" 
+                         required="true" requiredMessage="adminid is required..."/>
+            <br/>
+            Name:
+            <h:inputText value="#{adminMB.userName}" 
+                         required="true" requiredMessage="adminid is required..."/>
+            <br/>
+            Type:
+            <h:inputText value="#{adminMB.type}" 
+                         required="" requiredMessage="adminid is required..."/>
+            <br/>
+            <h:commandButton value="add" action="#{adminMB.addwl()}"/>
+        </h:form>        
+    </body>
+</html>

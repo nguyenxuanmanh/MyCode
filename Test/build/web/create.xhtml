@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Create Form</title>
+        <meta name="viewport" content="width=device-width"/>
+    </h:head>
+    <h:body>
+        <h1>Create Form</h1>
+        <h:form>
+             Enter ID:
+             <h:inputText value="#{adminMB.adminID}" 
+                         required="true" requiredMessage="adminid is required..."/>
+            <br/>
+           
+            Enter Name:
+            <h:inputText value="#{adminMB.adminName}" 
+                         required="true" requiredMessage="adminname is required..."/>
+            <br/>
+            Enter gender:
+            <h:inputText value="#{adminMB.gender}" 
+                         required="true" requiredMessage="gender is required..."/>
+            <br/>
+            Enter Email:
+            <h:inputText value="#{adminMB.email}" 
+                         required="true" requiredMessage="email is required..."/>
+            <br/>
+            Enter Phone:
+            <h:inputText value="#{adminMB.phone}" 
+                         required="true" requiredMessage="phone is required..."/>
+            <br/>
+            Enter Password:
+            <h:inputText value="#{adminMB.password}" 
+                         required="true" requiredMessage="pass is required..."/>
+            <br/>
+            Enter Address:
+            <h:inputText value="#{adminMB.address}" 
+                         required="true" requiredMessage="address is required..."/>
+            <br/>Enter Role:
+            <h:inputText value="#{adminMB.role}" 
+                         required="true" requiredMessage="role is required..."/>
+            <br/>
+            
+            <h:commandButton value="Create" action="#{adminMB.create()}"/>
+        </h:form>
+    </h:body>
+</html>
